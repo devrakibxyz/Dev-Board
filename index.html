@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="w-10/12 mx-auto">
+        <div class="navbar bg-base-100 shadow-sm">
+          <div class="navbar-start">
+            <a href=""><img src="./assets/logo.png" alt="" /></a>
+            <a class="btn btn-ghost text-xl">DevBoard</a>
+          </div>
+
+          <div class="navbar-end space-x-5">
+            <input
+              type="checkbox"
+              checked="checked"
+              class="checkbox checkbox-neutral"
+            />
+            <h2 id="menu-count" class="text-2xl">23</h2>
+            <a class="btn"><img src="./assets/theme-btn.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-20">
+      <div class="w-10/12 mx-auto">
+        <div class="flex gap-4 justify-between">
+          <div class="w-[70%]">
+            <div class="grid grid-cols-4 gap-5">
+              <div class="card bg-[#f4f7ff] shadow-sm">
+                <div class="card-body">
+                  <div class="flex space-x-3 items-center">
+                    <div>
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        class="checkbox checkbox-neutral"
+                      />
+                    </div>
+                    <div>
+                      <h1>Task Assign</h1>
+                      <h2 id="task-count" class="text-2xl">6</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-2">
+                <div
+                  id="discover"
+                  class="flex items-center cursor-pointer p-5 rounded-xl bg-[#627efc]"
+                >
+                  <img src="./assets/board.png" alt="" />
+                  <h2 class="text-white text-3xl">
+                    Discover Something New Today!
+                  </h2>
+                </div>
+              </div>
+              <div class="card bg-[#f4f7ff] shadow-sm">
+                <div class="card-body">
+                  <div class="flex gap-3 space-x-3 items-center">
+                    <div>
+                      <img
+                        class="w-[100px]"
+                        src="./assets/calender.png"
+                        alt=""
+                      />
+                    </div>
+                    <div id="date-display">
+                      <!-- <h2>Wed</h2>
+                      <p class="text-2xl">Jul 28 2025</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 card bottom -->
+            <div class="grid grid-cols-3 gap-5 mt-12">
+              <div class="card bg-[#f4f7ff] card-lg shadow-sm">
+                <div class="card-body">
+                  <h1 class="bg-white">ShopEase</h1>
+                  <h2 class="card-title task-title">Fix Mobile Button Issue</h2>
+                  <p class="text-slate-400">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                  <div class="card-actions flex justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <span>21 March 2025</span>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary card-btn">
+                        Completed
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-[#f4f7ff] card-lg shadow-sm">
+                <div class="card-body">
+                  <h1 class="bg-white">CloudSync</h1>
+                  <h2 class="card-title task-title">Add Dark Mode</h2>
+                  <p class="text-slate-400">
+                    Store the user's preference in localStorage, update CSS
+                    variables dynamically, and apply a smooth transition effect.
+                  </p>
+                  <div class="card-actions flex justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <span>21 March 2025</span>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary card-btn">
+                        Completed
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-[#f4f7ff] card-lg shadow-sm">
+                <div class="card-body">
+                  <h1 class="bg-white">SwiftPay</h1>
+                  <h2 class="card-title task-title">Optimize Home page</h2>
+                  <p class="text-slate-400">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                  <div class="card-actions flex justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <span>21 March 2025</span>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary card-btn">
+                        Completed
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-[#f4f7ff] card-lg shadow-sm">
+                <div class="card-body">
+                  <h1 class="bg-white">Meta</h1>
+                  <h2 class="card-title task-title">Add new emoji</h2>
+                  <p class="text-slate-400">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                  <div class="card-actions flex justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <span>21 March 2025</span>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary card-btn">
+                        Completed
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-[#f4f7ff] card-lg shadow-sm">
+                <div class="card-body">
+                  <h1 class="bg-white">Google LLC</h1>
+                  <h2 class="card-title task-title">Integrate OpenAI API</h2>
+                  <p class="text-slate-400">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                  <div class="card-actions flex justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <span>21 March 2025</span>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary card-btn">
+                        Completed
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-[#f4f7ff] card-lg shadow-sm">
+                <div class="card-body">
+                  <h1 class="bg-white">Glassdoor</h1>
+                  <h2 class="card-title task-title">Improve Job searching</h2>
+                  <p class="text-slate-400">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                  <div class="card-actions flex justify-between">
+                    <div>
+                      <p>Deadline</p>
+                      <span>21 March 2025</span>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary card-btn">
+                        Completed
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-right -->
+          <div class="w-[30%]">
+            <div class="space-y-5">
+              <div class="flex justify-center gap-2">
+                <img class="w-[25px]" src="./assets/activity.png" alt="" />
+                <h2 class="card-title">Activity Log</h2>
+              </div>
+
+              <div class="flex justify-center">
+                <button id="clear-history" class="btn btn-primary">
+                  Clear History
+                </button>
+              </div>
+            </div>
+            <hr class="mt-5 border-dashed text-slate-400" />
+
+            <div id="active-history"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./apps.js"></script>
+  </body>
+</html>

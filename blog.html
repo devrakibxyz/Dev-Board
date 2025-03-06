@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="w-10/12 mx-auto">
+        <div class="navbar bg-base-100 shadow-sm">
+          <div class="navbar-start">
+            <a href=""><img src="./assets/logo.png" alt="" /></a>
+            <a id="dev" class="btn btn-ghost text-xl">DevBoard</a>
+          </div>
+
+          <div class="navbar-end space-x-5">
+            <button id="back-Home" class="btn btn-primary">Back to home</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-2 w-10/12 mx-auto">
+      <h2 class="text-3xl font-bold text-center">Blogs</h2>
+      <div class="mt-6 space-y-5 card bg-base-100 card-xxl p-10 shadow-sm">
+        <h2>
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h2>
+        <p>answer:</p>
+        <li>getElementsByTagName()</li>
+        <li>getElementsByClassName()</li>
+        <li>getElementById()</li>
+        <li>querySelector()</li>
+        <li>querySelectorAll()</li>
+      </div>
+      <div class="mt-6 card bg-base-100 card-xxl p-10 shadow-sm">
+        <h2>
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h2>
+        <p>Answer:</p>
+        <li>innerHTML: innerHTML return Html tags</li>
+        <li>innerText: innerText return inside tags content</li>
+        <li>
+          innerContent: innerContent return inside tags content and hidden text
+          contet from child element
+        </li>
+      </div>
+      <div class="mt-6 card bg-base-100 card-xxl p-10 shadow-sm">
+        <h2>Question-3: What is event delegation in the DOM?</h2>
+        <p>
+          Answer: প্যারেন্ট উপাদানে ইভেন্ট লাগানো এবং সেই প্যারেন্টের ভিতরের
+          সমস্ত চাইল্ড উপাদানের ইভেন্ট হ্যান্ডলিং করা।
+        </p>
+      </div>
+      <div class="mt-6 card bg-base-100 card-xxl p-10 shadow-sm">
+        <h2>Question-4: What is event bubbling in the DOM?</h2>
+        <p>
+          Answer: যখন কোনো ইভেন্ট (যেমন, ক্লিক) একটি উপাদানে ঘটে, তখন সেটি
+          প্যারেন্ট উপাদানগুলোতে পৌঁছাতে থাকে, একে একে উপরের দিকে।
+        </p>
+      </div>
+      <div class="mt-6 card bg-base-100 card-xxl p-10 shadow-sm">
+        <h2>
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h2>
+        <p>Answer:</p>
+        <li>Create an element: Use document.createElement()</li>
+        <li>Add an element: Use appendChild()</li>
+        <li>Remove an element: Use removeChild()</li>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
