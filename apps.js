@@ -24,12 +24,16 @@ for (const btn of allBtn) {
       convertTaskCount--;
       taskCount.innerText = convertTaskCount;
     }
+
     const taskTitle =
-      btn.parentElement.parentElement.querySelectorAll(".task-title").innerText;
+      btn.parentNode.parentNode.parentNode.firstElementChild.nextElementSibling
+        .innerText;
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleTimeString();
 
     const activeHistory = document.getElementById("active-history");
     const p = document.createElement("p");
-    p.innerText = `You Have Completed The Task: ${taskTitle}`;
+    p.innerText = `You Have Completed The Task:  ${taskTitle} ${formattedDate}`;
     activeHistory.appendChild(p);
   });
 }
@@ -45,6 +49,13 @@ discover.addEventListener("click", function () {
   window.location.href = "blog.html";
 });
 
+const headerBtn = document.getElementById("header-btn");
+headerBtn.addEventListener("click", function () {
+  const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  document.body.style.backgroundColor = randomColor;
+});
+
 const currentDate = new Date();
+const formattedDate = currentDate.toLocaleDateString();
 const dateDisplay = document.getElementById("date-display");
-dateDisplay.innerText = currentDate;
+dateDisplay.innerText = formattedDate;
